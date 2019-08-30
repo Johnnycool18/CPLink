@@ -10,7 +10,7 @@
       li { font-family: inherit; font-size: 16px; }
     </style>
   </head>
-  <body>
+  <body id="iframeRCContent">
     <h3 style="font-style: italic;">Last Update: Aug 30, 2019</h3>
     <h2 style="color: #125183; font-size: 32px;">New Bullards Bar Reservoir</h2>
     <h2 style="color: #0076BB; font-size: 24px;">Flood Space</h2>
@@ -44,4 +44,9 @@
     <h3 style="font-style: italic; padding-top: 10px;">Warning! This data is preliminary and subject to revision.</h3>
     <br>
   </body>
+  <script>
+    var headLine = document.getElementById('versionHeadLine');
+    var iframeRCC = document.getElementById('iframeRCContent');
+    iframeRCC.style.font-family = headLine.style.font-family;
+  </script>
 </html>
